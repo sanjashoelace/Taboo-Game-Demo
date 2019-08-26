@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taboo</title>
+    
+    <link rel="icon" href="assets/rolling-on-the-floor-laughing_1f923.png">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="clearfix">
+
+    <h1 class="top text-center">Kewl Demo TABOO</h1>
+
+    <div class="starter">
+        <p style="color: white">Input your team names and press start to begin!</p>
+        <form action="#" method="#" class="myForm" name="myForm">
+            <label for="yourName" class="yourName">Team 1:</label>
+            <input type="text" id="teamOneName" value="One">	
+            <label for="yourName" class="yourName">Team 2:</label>
+            <input type="text" id="teamTwoName" value="Two">	
+            <div class="pressStart">
+                <button class='start btn-lg'>🙃 Start 🙃</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="pickTeam">
+        <p style="color: white">Select the next team:</p>
+        <div class="team1button">
+            <button class="team1 btn-lg" style="font-size: 15px; color: white">Team 1</button>
+        </div>
+        <div class="team2button">
+            <button class="team2 btn-lg" style="font-size: 15px; color: White">Team 2</button>
+        </div>
+    </div>
+
+    <div class="wrapper clearfix">
+
+        <div class="scoredisplay1">
+            <h2><span class="scoreTeam1">Score Team 1: </span><span class="score1">0</span></h2>
+        </div>
+
+        <div class="scoredisplay2">
+            <h2><span class="scoreTeam2">Score Team 2: </span><span class="score2">0</span></h2>
+        </div>
+
+        <div class="timerdisplay">
+            <h3>Timer: <span class="timer"></span> seconds left!</h3>
+        </div>
+
+        <div class="progressBarModal">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%; background-color: purple">
+                </div>
+            </div>
+        </div>
+
+        <div class="pausebutton">
+            <button class="pause btn-lg">⏳Pause ⏳</button>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo1'>
+                <h4>HACKER YOU</h4>
+                <list>
+                    <ul>
+                        <li>Heather</li>
+                        <li>Coding</li>
+                        <li>Juno</li>
+                        <li>Mark</li>
+                        <li>Dev</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo2'>
+                <h4>SOFTBALL</h4>
+                <list>
+                    <ul>
+                        <li>Monday</li>
+                        <li>Play</li>
+                        <li>Ball</li>
+                        <li>Throw</li>
+                        <li>Sports</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo3'>
+                <h4>JAVASCRIPT</h4>
+                <list>                    
+                    <ul>
+                        <li>Fun</li>
+                        <li>Cool</li>
+                        <li>Function</li>
+                        <li>Jquery</li>
+                        <li>Coffee</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo4'>
+                <h4>MARK</h4>
+                <list>                    
+                    <ul>
+                        <li>Teacher</li>
+                        <li>Superzoom</li>
+                        <li>Dogs</li>
+                        <li>Enthusiastic</li>
+                        <li>HackerYou</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo5'>
+                <h4>CSS</h4>
+                <list>                    
+                    <ul>
+                        <li>Style</li>
+                        <li>HTML</li>
+                        <li>Pretty</li>
+                        <li>Gradient</li>
+                        <li>Website</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo6'>
+                <h4>TABOO</h4>
+                <list>                    
+                    <ul>
+                        <li>Best</li>
+                        <li>Game</li>
+                        <li>Unsaid</li>
+                        <li>Fun</li>
+                        <li>Board</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo7">	<h4>	HARVARD 	</h4>	<list><ul>	<li>	Ivy League	</li>	<li>	School	</li>	<li>	Crimson	</li>	<li>	Cambridge	</li>	<li>	Yale	</li>	</div>	</div>
+
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo8">	<h4>	FLY SWATTER	</h4>	<list><ul>	<li>	Kill	</li>	<li>	Slap	</li>	<li>	Bug	</li>	<li>	Buzz	</li>	<li>	Tool	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo9">	<h4>	CANADA	</h4>	<list><ul>	<li>	North	</li>	<li>	Cold	</li>	<li>	Snow	</li>	<li>	Goose	</li>	<li>	Mountie	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo10">	<h4>	ADDICTION	</h4>	<list><ul>	<li>	Drug	</li>	<li>	Alcohol	</li>	<li>	Rehab	</li>	<li>	Habit	</li>	<li>	Withdrawal	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo11">	<h4>	INCISION	</h4>	<list><ul>	<li>	Cut	</li>	<li>	Operate	</li>	<li>	Surgery	</li>	<li>	Scalpel	</li>	<li>	Stitch	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo12">	<h4>	POLO	</h4>	<list><ul>	<li>	Horse	</li>	<li>	Water	</li>	<li>	Shirt	</li>	<li>	Club	</li>	<li>	Sport	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo13">	<h4>	SCREAM	</h4>	<list><ul>	<li>	Yell	</li>	<li>	Shout	</li>	<li>	Scare	</li>	<li>	Fear	</li>	<li>	Surprise	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo14">	<h4>	CURFEW	</h4>	<list><ul>	<li>	Late	</li>	<li>	Teenager	</li>	<li>	Home	</li>	<li>	Ground	</li>	<li>	Time	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo15">	<h4>	SPREADSHEET	</h4>	<list><ul>	<li>	Excel	</li>	<li>	Numbers	</li>	<li>	Math	</li>	<li>	Equations	</li>	<li>	Table	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo16">	<h4>	SPIRITUAL	</h4>	<list><ul>	<li>	Belief	</li>	<li>	Religion	</li>	<li>	Faith	</li>	<li>	God	</li>	<li>	Holy	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo17">	<h4>	BLISTER	</h4>	<list><ul>	<li>	Pop	</li>	<li>	Skin	</li>	<li>	Heel	</li>	<li>	Handle	</li>	<li>	Foot	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo18">	<h4>	MOTHERBOARD	</h4>	<list><ul>	<li>	Computer	</li>	<li>	Processor	</li>	<li>	Boot	</li>	<li>	Circuit	</li>	<li>	Chip	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo19">	<h4>	NORTH CAROLINA	</h4>	<list><ul>	<li>	Atlantic	</li>	<li>	Tar Heel	</li>	<li>	South	</li>	<li>	Virginia	</li>	<li>	Tennessee	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo20">	<h4>	BAR STOOL	</h4>	<list><ul>	<li>	Drink	</li>	<li>	Sit	</li>	<li>	Chair	</li>	<li>	Fight	</li>	<li>	Kitchen	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo21">	<h4>	THERAPIST	</h4>	<list><ul>	<li>	Analyze	</li>	<li>	Doctor	</li>	<li>	Couch	</li>	<li>	Shrink	</li>	<li>	Psychiatrist	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo22">	<h4>	WHIRLPOOL	</h4>	<list><ul>	<li>	Water	</li>	<li>	Spin	</li>	<li>	River	</li>	<li>	Swirl	</li>	<li>	Appliance	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo23">	<h4>	CALCULUS	</h4>	<list><ul>	<li>	Math	</li>	<li>	Function	</li>	<li>	Derivative	</li>	<li>	Integral	</li>	<li>	Limit	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo24">	<h4>	ILLITERATE	</h4>	<list><ul>	<li>	Read	</li>	<li>	Write	</li>	<li>	Word	</li>	<li>	School	</li>	<li>	Educate	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo25">	<h4>	BEATBOX	</h4>	<list><ul>	<li>	Rhythm	</li>	<li>	Drum	</li>	<li>	Mouth	</li>	<li>	Sound	</li>	<li>	Music	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo26">	<h4>	SQUIRREL	</h4>	<list><ul>	<li>	Tree	</li>	<li>	Rocky	</li>	<li>	Bushy	</li>	<li>	Road	</li>	<li>	Fly	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo27">	<h4>	ANTEATER	</h4>	<list><ul>	<li>	Animal	</li>	<li>	Insects	</li>	<li>	Tongue	</li>	<li>	Termites	</li>	<li>	Hill	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo28">	<h4>	BIGFOOT	</h4>	<list><ul>	<li>	Sasquatch	</li>	<li>	Yeti	</li>	<li>	Hairy	</li>	<li>	Monster	</li>	<li>	Legend	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo29">	<h4>	CONCH	</h4>	<list><ul>	<li>	Shell	</li>	<li>	Whelk	</li>	<li>	Ocean	</li>	<li>	Beach	</li>	<li>	Snail	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo30">	<h4>	PAPER BOY	</h4>	<list><ul>	<li>	News	</li>	<li>	Deliver	</li>	<li>	Bicycle	</li>	<li>	Nintendo	</li>	<li>	Throw	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo31">	<h4>	PILLAGE	</h4>	<list><ul>	<li>	Burn	</li>	<li>	City	</li>	<li>	Pirate	</li>	<li>	Soldier	</li>	<li>	Plunder	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo32">	<h4>	SIT-UP	</h4>	<list><ul>	<li>	Crunch	</li>	<li>	Abdominal	</li>	<li>	Fitness	</li>	<li>	Workout	</li>	<li>	Exercise	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo33">	<h4>	PHOTOGRAPH	</h4>	<list><ul>	<li>	Picture	</li>	<li>	Camera	</li>	<li>	Cheese	</li>	<li>	Art	</li>	<li>	Snap	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo34">	<h4>	WITCHCRAFT	</h4>	<list><ul>	<li>	Burn	</li>	<li>	Magic	</li>	<li>	Potter	</li>	<li>	Practice	</li>	<li>	Wizard	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo35">	<h4>	TUMOR	</h4>	<list><ul>	<li>	Cancer	</li>	<li>	Malignant	</li>	<li>	Benign	</li>	<li>	Doctor	</li>	<li>	Lump	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo36">	<h4>	GARBAGE	</h4>	<list><ul>	<li>	Day	</li>	<li>	Trash	</li>	<li>	Collect	</li>	<li>	Truck	</li>	<li>	Can	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo37">	<h4>	ZOO	</h4>	<list><ul>	<li>	Animal	</li>	<li>	Panda	</li>	<li>	Monkey	</li>	<li>	Visit	</li>	<li>	Cage	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo38">	<h4>	LUGE	</h4>	<list><ul>	<li>	Olympics	</li>	<li>	Slide	</li>	<li>	Back	</li>	<li>	Board	</li>	<li>	Downhill	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo39">	<h4>	CUCUMBER	</h4>	<list><ul>	<li>	Vegetable	</li>	<li>	Green	</li>	<li>	Crunch	</li>	<li>	Grow	</li>	<li>	Pickle	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo40">	<h4>	ENTREPRENEUR	</h4>	<list><ul>	<li>	Business	</li>	<li>	Company	</li>	<li>	Hire	</li>	<li>	Start	</li>	<li>	Sell	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo41">	<h4>	BIRTHDAY CAKE	</h4>	<list><ul>	<li>	Candle	</li>	<li>	Chocolate	</li>	<li>	Vanilla	</li>	<li>	Frosting	</li>	<li>	Party	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo42">	<h4>	COLOGNE	</h4>	<list><ul>	<li>	Smell	</li>	<li>	Date	</li>	<li>	Man	</li>	<li>	French	</li>	<li>	Dab	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo43">	<h4>	DEMOCRACY	</h4>	<list><ul>	<li>	Government	</li>	<li>	Elect	</li>	<li>	Vote	</li>	<li>	America	</li>	<li>	Republic	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo44">	<h4>	FUNGUS	</h4>	<list><ul>	<li>	Mushroom	</li>	<li>	Spore	</li>	<li>	Mildew	</li>	<li>	Mold	</li>	<li>	Green	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo45">	<h4>	HAIRBRUSH	</h4>	<list><ul>	<li>	Comb	</li>	<li>	Salon	</li>	<li>	Straight	</li>	<li>	Tangle	</li>	<li>	Morning	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo46">	<h4>	VISOR	</h4>	<list><ul>	<li>	Golf	</li>	<li>	Hat	</li>	<li>	Head	</li>	<li>	Sun	</li>	<li>	Eyes	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo47">	<h4>	WALL STREET	</h4>	<list><ul>	<li>	Stock Market	</li>	<li>	Broker	</li>	<li>	Bond	</li>	<li>	Greed	</li>	<li>	New York	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo48">	<h4>	ODYSSEUS	</h4>	<list><ul>	<li>	Troy	</li>	<li>	Home	</li>	<li>	Ulysses	</li>	<li>	Homer	</li>	<li>	Epic	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo49">	<h4>	MOTEL	</h4>	<list><ul>	<li>	Inn	</li>	<li>	Hotel	</li>	<li>	Cheap	</li>	<li>	Sleep	</li>	<li>	Stay	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo50">	<h4>	RAINBOW	</h4>	<list><ul>	<li>	Color	</li>	<li>	Gold	</li>	<li>	Light	</li>	<li>	Reading	</li>	<li>	Waterfall	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo51">	<h4>	ELVIS PRESLEY	</h4>	<list><ul>	<li>	Graceland	</li>	<li>	Hound Dog	</li>	<li>	Sing	</li>	<li>	Rock N' Roll	</li>	<li>	King	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo52">	<h4>	CANVAS	</h4>	<list><ul>	<li>	Blank	</li>	<li>	Paint	</li>	<li>	Draw	</li>	<li>	Door	</li>	<li>	Poll	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo53">	<h4>	WRITE	</h4>	<list><ul>	<li>	Paper	</li>	<li>	Pencil	</li>	<li>	Pen	</li>	<li>	Letter	</li>	<li>	Hand	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo54">	<h4>	WILDFIRE	</h4>	<list><ul>	<li>	Hot	</li>	<li>	Forest	</li>	<li>	Brush	</li>	<li>	Fight	</li>	<li>	Spread	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo55">	<h4>	EMERALD	</h4>	<list><ul>	<li>	Green	</li>	<li>	Oz	</li>	<li>	Stone	</li>	<li>	Gem	</li>	<li>	Diamond	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo56">	<h4>	BOXER	</h4>	<list><ul>	<li>	Sport	</li>	<li>	Dog	</li>	<li>	Punch	</li>	<li>	Ring	</li>	<li>	Gloves	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo57">	<h4>	BEEF JERKY	</h4>	<list><ul>	<li>	Slim Jim	</li>	<li>	Dry	</li>	<li>	Meat	</li>	<li>	Chew	</li>	<li>	Salt	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo58">	<h4>	KIDDIE POOL	</h4>	<list><ul>	<li>	Swim	</li>	<li>	Small	</li>	<li>	Kid	</li>	<li>	Shallow	</li>	<li>	Baby	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo59">	<h4>	TOOTHPASTE	</h4>	<list><ul>	<li>	Brush	</li>	<li>	Teeth	</li>	<li>	Mouth	</li>	<li>	Bed	</li>	<li>	Clean	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo60">	<h4>	PUREE	</h4>	<list><ul>	<li>	Blend	</li>	<li>	Liquid	</li>	<li>	Smooth	</li>	<li>	Sauce	</li>	<li>	Tomato	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo61">	<h4>	KING CRAB	</h4>	<list><ul>	<li>	Seafood	</li>	<li>	Claw	</li>	<li>	Sideways	</li>	<li>	Pincer	</li>	<li>	Leg	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo62">	<h4>	WELCOME	</h4>	<list><ul>	<li>	Greet	</li>	<li>	Mat	</li>	<li>	Hello	</li>	<li>	Home	</li>	<li>	Party	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo63">	<h4>	CRAWL	</h4>	<list><ul>	<li>	Baby	</li>	<li>	Space	</li>	<li>	Bug	</li>	<li>	Knees	</li>	<li>	Floor	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo64">	<h4>	CROP CIRCLE	</h4>	<list><ul>	<li>	Corn	</li>	<li>	Ufo	</li>	<li>	Pattern	</li>	<li>	Alien	</li>	<li>	Hoax	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo65">	<h4>	PASSWORD	</h4>	<list><ul>	<li>	Hack	</li>	<li>	Steal	</li>	<li>	Lock	</li>	<li>	Secret	</li>	<li>	Login	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo66">	<h4>	WEBCAM	</h4>	<list><ul>	<li>	Skype	</li>	<li>	Chat	</li>	<li>	Video	</li>	<li>	Talk	</li>	<li>	Computer	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo67">	<h4>	WHEELCHAIR	</h4>	<list><ul>	<li>	Disable	</li>	<li>	Handicap	</li>	<li>	Roll	</li>	<li>	Electric	</li>	<li>	Ramp	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo68">	<h4>	YANKEE	</h4>	<list><ul>	<li>	Northern	</li>	<li>	New York	</li>	<li>	American	</li>	<li>	Baseball	</li>	<li>	British	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo69">	<h4>	ZEUS	</h4>	<list><ul>	<li>	Jupiter	</li>	<li>	Greek	</li>	<li>	King	</li>	<li>	God	</li>	<li>	Olympus	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo70">	<h4>	BEETHOVEN	</h4>	<list><ul>	<li>	Composer	</li>	<li>	Deaf	</li>	<li>	Piano	</li>	<li>	Symphony	</li>	<li>	Roll Over	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo71">	<h4>	BIKINI	</h4>	<list><ul>	<li>	Yellow	</li>	<li>	Beach	</li>	<li>	Wear	</li>	<li>	Two Piece	</li>	<li>	Wax	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo72">	<h4>	BUFFET	</h4>	<list><ul>	<li>	Eat	</li>	<li>	Meal	</li>	<li>	All	</li>	<li>	Salad	</li>	<li>	Chinese	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo73">	<h4>	COAST	</h4>	<list><ul>	<li>	Ocean	</li>	<li>	Beach	</li>	<li>	Sand	</li>	<li>	Sail	</li>	<li>	Wave	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo74">	<h4>	PLATEAU	</h4>	<list><ul>	<li>	Flat	</li>	<li>	Land	</li>	<li>	Mountain	</li>	<li>	West	</li>	<li>	Desert	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo75">	<h4>	RANCID	</h4>	<list><ul>	<li>	Sour	</li>	<li>	Milk	</li>	<li>	Bad	</li>	<li>	Rotten	</li>	<li>	Trash	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo76">	<h4>	SIGNAL	</h4>	<list><ul>	<li>	Smoke	</li>	<li>	Morse Code	</li>	<li>	Sign	</li>	<li>	Light	</li>	<li>	Turn	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo77">	<h4>	SLOW MOTION	</h4>	<list><ul>	<li>	Move	</li>	<li>	Movie	</li>	<li>	Frame	</li>	<li>	Action	</li>	<li>	Film	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo78">	<h4>	SLEET	</h4>	<list><ul>	<li>	Rain	</li>	<li>	Sky	</li>	<li>	Ice	</li>	<li>	Cloud	</li>	<li>	Freeze	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo79">	<h4>	DANCE	</h4>	<list><ul>	<li>	Disco	</li>	<li>	Ballroom	</li>	<li>	Waltz	</li>	<li>	Floor	</li>	<li>	Revolution	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo80">	<h4>	ENGINEER	</h4>	<list><ul>	<li>	Train	</li>	<li>	Civil	</li>	<li>	Bridge	</li>	<li>	Electric	</li>	<li>	Computer	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo81">	<h4>	CEO	</h4>	<list><ul>	<li>	Business	</li>	<li>	Company	</li>	<li>	Lead	</li>	<li>	Head	</li>	<li>	Run	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo82">	<h4>	CHEAT	</h4>	<list><ul>	<li>	Rules	</li>	<li>	System	</li>	<li>	Affair	</li>	<li>	Game	</li>	<li>	Break	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo83">	<h4>	JULIUS CAESAR	</h4>	<list><ul>	<li>	Brutus	</li>	<li>	Rome	</li>	<li>	Salad	</li>	<li>	Calendar	</li>	<li>	Emperor	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo84">	<h4>	APOCALYPSE	</h4>	<list><ul>	<li>	End	</li>	<li>	World	</li>	<li>	Plague	</li>	<li>	Rapture	</li>	<li>	Nuclear	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo85">	<h4>	SURGEON	</h4>	<list><ul>	<li>	Doctor	</li>	<li>	Stitch	</li>	<li>	Hospital	</li>	<li>	Operate	</li>	<li>	Brain	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo86">	<h4>	SAMURAI	</h4>	<list><ul>	<li>	Japan	</li>	<li>	Warrior	</li>	<li>	Ninja	</li>	<li>	Sword	</li>	<li>	Katana	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo87">	<h4>	WATERMELON	</h4>	<list><ul>	<li>	Seed	</li>	<li>	Red	</li>	<li>	Green	</li>	<li>	Summer	</li>	<li>	Juice	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo88">	<h4>	BLIND	</h4>	<list><ul>	<li>	Vision	</li>	<li>	See	</li>	<li>	Glasses	</li>	<li>	Cane	</li>	<li>	Dog	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo89">	<h4>	REAL ESTATE	</h4>	<list><ul>	<li>	House	</li>	<li>	Land	</li>	<li>	Realty	</li>	<li>	Mortgage	</li>	<li>	Bubble	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo90">	<h4>	EXORCISM	</h4>	<list><ul>	<li>	Demon	</li>	<li>	Priest	</li>	<li>	Holy	</li>	<li>	Christ	</li>	<li>	Cleanse	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo91">	<h4>	PEANUT	</h4>	<list><ul>	<li>	Butter	</li>	<li>	Jelly	</li>	<li>	Shell	</li>	<li>	Salt	</li>	<li>	Charlie Brown	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo92">	<h4>	PARDON	</h4>	<list><ul>	<li>	Forgive	</li>	<li>	Convict	</li>	<li>	Amnesty	</li>	<li>	French	</li>	<li>	President	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo93">	<h4>	EASTER EGG	</h4>	<list><ul>	<li>	Color	</li>	<li>	Paint	</li>	<li>	Dye	</li>	<li>	Vinegar	</li>	<li>	Hunt	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo94">	<h4>	EMBARRASSED	</h4>	<list><ul>	<li>	Shy	</li>	<li>	Blush	</li>	<li>	Red	</li>	<li>	Foolish	</li>	<li>	Feel	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo95">	<h4>	POISON IVY	</h4>	<list><ul>	<li>	Itch	</li>	<li>	Rash	</li>	<li>	Plant	</li>	<li>	Skin	</li>	<li>	Touch	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo96">	<h4>	BEG	</h4>	<list><ul>	<li>	Ask	</li>	<li>	Knee	</li>	<li>	Plead	</li>	<li>	Mercy	</li>	<li>	Dog	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo97">	<h4>	BUDDHA	</h4>	<list><ul>	<li>	Fat	</li>	<li>	India	</li>	<li>	Meditate	</li>	<li>	Religion	</li>	<li>	Statue	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo98">	<h4>	BRUISE	</h4>	<list><ul>	<li>	Black	</li>	<li>	Blue	</li>	<li>	Blood	</li>	<li>	Skin	</li>	<li>	Hurt	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo99">	<h4>	THORN	</h4>	<list><ul>	<li>	Rose	</li>	<li>	Prick	</li>	<li>	Bush	</li>	<li>	Side	</li>	<li>	Stem	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo100">	<h4>	PHARMACIST	</h4>	<list><ul>	<li>	Pill	</li>	<li>	Prescription	</li>	<li>	Pharmacy	</li>	<li>	Counter	</li>	<li>	Medicine	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo101">	<h4>	VOCAL CHORDS	</h4>	<list><ul>	<li>	Talk	</li>	<li>	Sing	</li>	<li>	Throat	</li>	<li>	Lose	</li>	<li>	Vibrate	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo102">	<h4>	CAMEL	</h4>	<list><ul>	<li>	Hump	</li>	<li>	Ride	</li>	<li>	Spit	</li>	<li>	Desert	</li>	<li>	Water	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo103">	<h4>	GREEN TEA	</h4>	<list><ul>	<li>	Caffeine	</li>	<li>	Hot	</li>	<li>	Bag	</li>	<li>	Drink	</li>	<li>	Coffee	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo104">	<h4>	SUPERCOMPUTER	</h4>	<list><ul>	<li>	Keyboard	</li>	<li>	Internet	</li>	<li>	Research	</li>	<li>	Powerful	</li>	<li>	Science	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo105">	<h4>	TRAGEDY	</h4>	<list><ul>	<li>	Greek	</li>	<li>	Romeo And Juliet	</li>	<li>	Sad	</li>	<li>	Horrible	</li>	<li>	Ending	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo106">	<h4>	DRAW	</h4>	<list><ul>	<li>	Art	</li>	<li>	Straws	</li>	<li>	Tie	</li>	<li>	Pencil	</li>	<li>	Pen	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo107">	<h4>	SERIAL KILLER	</h4>	<list><ul>	<li>	Murder	</li>	<li>	Hannibal	</li>	<li>	Crazy	</li>	<li>	Kill	</li>	<li>	Catch	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo108">	<h4>	AL CAPONE	</h4>	<list><ul>	<li>	Mob	</li>	<li>	Mafia	</li>	<li>	Prohibition	</li>	<li>	Alcohol	</li>	<li>	Bootleg	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo109">	<h4>	EAST	</h4>	<list><ul>	<li>	Sunrise	</li>	<li>	Asia	</li>	<li>	Russia	</li>	<li>	West	</li>	<li>	New York	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo110">	<h4>	HILLARY CLINTON	</h4>	<list><ul>	<li>	First Lady	</li>	<li>	President	</li>	<li>	Secretary Of State	</li>	<li>	Bill	</li>	<li>	Election	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo111">	<h4>	WRESTLING	</h4>	<list><ul>	<li>	Greek	</li>	<li>	Arm	</li>	<li>	Fight	</li>	<li>	Boxing	</li>	<li>	Grab	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo112">	<h4>	FRENCH KISS	</h4>	<list><ul>	<li>	Lips	</li>	<li>	Make Out	</li>	<li>	Tongue	</li>	<li>	Party	</li>	<li>	Mouth	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo113">	<h4>	PIPE ORGAN	</h4>	<list><ul>	<li>	Church	</li>	<li>	Music	</li>	<li>	Hymn	</li>	<li>	Play	</li>	<li>	Piano	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo114">	<h4>	WAITER	</h4>	<list><ul>	<li>	Tip	</li>	<li>	Table	</li>	<li>	Serve	</li>	<li>	Food	</li>	<li>	Male	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo115">	<h4>	STEWARDESS	</h4>	<list><ul>	<li>	Plane	</li>	<li>	Serve	</li>	<li>	Order	</li>	<li>	Air	</li>	<li>	Food	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo116">	<h4>	POKER	</h4>	<list><ul>	<li>	Card	</li>	<li>	Face	</li>	<li>	Gamble	</li>	<li>	Bluff	</li>	<li>	Hold	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo117">	<h4>	FERRIS WHEEL	</h4>	<list><ul>	<li>	Fair	</li>	<li>	Ride	</li>	<li>	Circus	</li>	<li>	Around	</li>	<li>	High	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo118">	<h4>	SMOOTH	</h4>	<list><ul>	<li>	Rough	</li>	<li>	Slick	</li>	<li>	Suave	</li>	<li>	Texture	</li>	<li>	Creamy	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo119">	<h4>	CELLO	</h4>	<list><ul>	<li>	String	</li>	<li>	Bass	</li>	<li>	Yo-Yo Ma	</li>	<li>	Bow	</li>	<li>	Orchestra	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo120">	<h4>	WHISKEY	</h4>	<list><ul>	<li>	Bourbon	</li>	<li>	Shot	</li>	<li>	Bar	</li>	<li>	Jack Daniels	</li>	<li>	Scotch	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo121">	<h4>	GOLDFISH	</h4>	<list><ul>	<li>	Guppy	</li>	<li>	Bowl	</li>	<li>	Crackers	</li>	<li>	Cheese	</li>	<li>	Aquarium	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo122">	<h4>	BARTENDER	</h4>	<list><ul>	<li>	Serve	</li>	<li>	Drink	</li>	<li>	Alcohol	</li>	<li>	Beer	</li>	<li>	Order	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo123">	<h4>	JAYWALK	</h4>	<list><ul>	<li>	Cross	</li>	<li>	Road	</li>	<li>	Street	</li>	<li>	Illegal	</li>	<li>	Cars	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo124">	<h4>	EARRING	</h4>	<list><ul>	<li>	Pierce	</li>	<li>	Jewelry	</li>	<li>	Lobe	</li>	<li>	Hoop	</li>	<li>	Girl	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo125">	<h4>	WRIGHT BROTHERS	</h4>	<list><ul>	<li>	Air Plane	</li>	<li>	Flight	</li>	<li>	Inventors	</li>	<li>	Kitty Hawk	</li>	<li>	Bicycle	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo126">	<h4>	DEMON	</h4>	<list><ul>	<li>	Evil	</li>	<li>	Possess	</li>	<li>	Halloween	</li>	<li>	Hell	</li>	<li>	Horn	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo127">	<h4>	MOOSE	</h4>	<list><ul>	<li>	North	</li>	<li>	Chocolate	</li>	<li>	Deer	</li>	<li>	Hunt	</li>	<li>	Antler	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo128">	<h4>	DIAPER	</h4>	<list><ul>	<li>	Wear	</li>	<li>	Stink	</li>	<li>	Wet	</li>	<li>	Change	</li>	<li>	Baby	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo129">	<h4>	UNICORN	</h4>	<list><ul>	<li>	Fantasy	</li>	<li>	Horn	</li>	<li>	Horse	</li>	<li>	Rainbow	</li>	<li>	One	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo130">	<h4>	HANGMAN	</h4>	<list><ul>	<li>	Execute	</li>	<li>	Rope	</li>	<li>	Hood	</li>	<li>	Death	</li>	<li>	Punish	</li>	</div>	</div>														
+        <div class='tabooCardWrapper'>	<div class="tabooCard taboo131">	<h4>	DRUMSTICK	</h4>	<list><ul>	<li>	Wood	</li>	<li>	Chicken	</li>	<li>	Hit	</li>	<li>	Band	</li>	<li>	Snare	</li>	</div>	</div>														
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo132'>
+                <h4>Waiting</h4>
+                <list>                    
+                    <ul>
+                        <li>for</li>
+                        <li>the</li>
+                        <li>WINNER</li>
+                        <li>!!!</li>
+                        <li></li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='correctButton'>
+            <button class='correct btn-lg' style="font-size: 15px">Correct</button>
+        </div>
+        <div class='skipButton'>
+            <button class='skip btn-lg' style="font-size: 15px">Skip</button>
+        </div> 
+        <div class='tabooButton'>
+            <button class='taboo btn-lg' style="font-size: 15px">Taboo</button>
+        </div>
+
+    </div>
+
+    <div class="resumeButton">
+        <button class="resume btn-lg" style="font-size: 15px">Resume</button>
+    </div>
+
+    <div class="winner">
+        <h2 class="winWin">Yay Team <span class="winWinWin"></span> is the winner!</h2>
+        <div class="playAgainButton">
+            <button class="playAgain btn-lg">Play Again?</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src='sandbox.js'></script>
+    <audio id="mysoundclip" preload="auto">
+        <source src="assets/Buzzer-SoundBible.com-188422102.mp3"> </source>
+    </audio>
+</body>
+</html>
